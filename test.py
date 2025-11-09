@@ -1,84 +1,4 @@
-# from flask import Flask, request, render_template, jsonify
-# import os
-# import pickle
-# import numpy as np
-# import pandas as pd
-# from PIL import Image
-# import cv2
 
-# # Initialize Flask app
-# app = Flask(__name__)
-
-# # Paths to Model and Data
-# MODEL_PATH = r"C:\Users\Administrator\Desktop\web_app\All_multi_color_apple.pk1"
-# DATA_PATH = r"C:\Users\Administrator\Desktop\web_app\All_apple_data.csv"
-
-# # Ensure 'static/uploads' directory exists
-# UPLOAD_FOLDER = "static/uploads"
-# os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
-# # Load trained model
-# model = None
-# try:
-#     with open(MODEL_PATH, 'rb') as file:
-#         model = pickle.load(file)
-#     if model is None:
-#         raise ValueError("❌ Loaded model is None. Check the .pk1 file.")
-#     print("✅ Model loaded successfully!")
-# except Exception as e:
-#     print("❌ Error loading model:", str(e))
-
-# # Load CSV data (optional)
-# try:
-#     data = pd.read_csv(DATA_PATH)
-#     print("✅ CSV data loaded successfully!")
-# except Exception as e:
-#     print("❌ Error loading CSV file:", str(e))
-#     data = None
-
-# @app.route('/')
-# def home():
-#     return render_template('index.html')
-
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     try:
-#         # Check if file is uploaded
-#         if 'file' not in request.files:
-#             return jsonify({'error': 'No file uploaded'})
-
-#         file = request.files['file']
-#         if file.filename == '':
-#             return jsonify({'error': 'No selected file'})
-
-#         # Save uploaded image
-#         filepath = os.path.join(UPLOAD_FOLDER, file.filename)
-#         file.save(filepath)
-
-#         # Process Image
-#         image = Image.open(filepath).convert("RGB")
-#         image = np.array(image)
-#         image = cv2.resize(image, (224, 224))  # Resize for model
-#         image = image / 255.0  # Normalize
-#         image = image.reshape(1, 224, 224, 3)
-
-#         # Check if model is loaded
-#         if model is None:
-#             return jsonify({'error': 'Model failed to load. Check server logs.'})
-
-#         # Predict using model
-#         prediction = model.predict(image)
-
-#         # Process result (customize based on model output)
-#         result = "Good Apple" if prediction[0] > 0.5 else "Bad Apple"
-
-#         return jsonify({'prediction': result, 'image_path': filepath})
-
-#     except Exception as e:
-#         return jsonify({'error': str(e)})
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 from flask import Flask, request, jsonify
 import tensorflow as tf
@@ -152,3 +72,4 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
