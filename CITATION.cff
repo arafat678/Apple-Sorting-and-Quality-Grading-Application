@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, models, or findings in your research, please cite it as below."
+authors:
+  - family-names: "Mondal"
+    given-names: "Arafat Ali"
+    affiliation: "Department of Artificial Intelligence, Maulana Abul Kalam Azad University of Technology (MAKAUT)"
+    orcid: "https://orcid.org/0009-0006-2487-8565"
+  - family-names: "Bhattacharyya"
+    given-names: "Nabarun"
+    affiliation: "Department of Artificial Intelligence, Maulana Abul Kalam Azad University of Technology (MAKAUT)"
+title: "Advanced Apple Sorting and Quality Grading Application Using Computer Vision and Deep Neural Networks"
+date-released: 2025-11-09
+url: "https://github.com/arafat678/Apple-Sorting-and-Quality-Grading-Application"
+keywords:
+  - apple-sorting
+  - quality-grading
+  - computer-vision
+  - deep-learning
+  - resnet50
+  - opencv-contour-analysis
+  - physical-traits
+  - agricultural-ai
+  - post-harvest-technology
