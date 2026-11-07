@@ -11,7 +11,6 @@ An end-to-end computer vision and deep learning system for automated apple sorti
 
 > **Authors:** **Arafat Ali Mondal**<sup>*</sup> and **Prof. Nabarun Bhattacharyya**  
 > *Department of Artificial Intelligence, Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal*  
-> <sup>*</sup> *Corresponding Author:* `arafatmondal7797@gmail.com`
 
 ---
 
@@ -39,7 +38,7 @@ flowchart LR
 ### 1. Computer Vision Physical Trait & Contour Extraction
 | Real-Time Bounding Box & Dimensioning | Surface Defect & Edge Contour Segmentation |
 |:---:|:---:|
-| ![Contour Dimensioning](figures/01_contour_dimensioning_results.png) | ![Defect Segmentation](figures/02_defect_contour_detection.png) |
+| ![Contour Dimensioning](figures/01_contour_dimensioning_results.png) |
 | *Automated pixel measurement ($W=373\text{ px}, H=397\text{ px}$) yielding $R^2 = 0.942$ correlation with physical digital caliper measurements.* | *Convex Hull and Canny edge segmentation isolating surface blemishes, scabs, and bruising.* |
 
 ---
