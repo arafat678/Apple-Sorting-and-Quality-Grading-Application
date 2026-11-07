@@ -36,8 +36,8 @@ flowchart LR
 ## Experimental Results & Visualizations
 
 ### 1. Computer Vision Physical Trait & Contour Extraction
-| Real-Time Bounding Box & Dimensioning | Surface Defect & Edge Contour Segmentation |
-|:---:|:---:|
+| Real-Time Bounding Box & Dimensioning 
+|:---:|
 | ![Contour Dimensioning](figures/01_contour_dimensioning_results.png) |
 | *Automated pixel measurement ($W=373\text{ px}, H=397\text{ px}$) yielding $R^2 = 0.942$ correlation with physical digital caliper measurements.* | *Convex Hull and Canny edge segmentation isolating surface blemishes, scabs, and bruising.* |
 
