@@ -43,3 +43,4 @@ def train_svm_baseline(X_train, y_train, C=1.0, gamma='scale'):
     model = make_pipeline(StandardScaler(), SVC(C=C, gamma=gamma, probability=True))
     model.fit(X_train, y_train)
     return model
+

@@ -77,3 +77,4 @@ def predict_quality_grade(model, image_path, class_names=None, device='cpu'):
         "confidence": float(probs[pred_idx]),
         "probabilities": {class_names[i]: float(probs[i]) for i in range(len(class_names))}
     }
+

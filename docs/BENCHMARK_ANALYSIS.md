@@ -59,3 +59,4 @@ To validate the computer vision contour module, automated pixel measurements wer
 - **Defect Area Segmentation Overlap (Dice Coefficient):** $0.886 \pm 0.04$
 
 Combining morphological trait extraction with deep visual feature embeddings provides robust, explainable grading decisions that mirror expert human grading while running at **$> 30\text{ FPS}$** throughput.
+

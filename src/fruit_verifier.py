@@ -74,3 +74,4 @@ class FruitVerifier:
         except Exception as e:
             # Fallback permissive on inference error
             return True, "unverified_pass", 1.0
+

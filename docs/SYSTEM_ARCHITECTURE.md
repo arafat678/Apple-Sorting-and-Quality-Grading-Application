@@ -64,3 +64,4 @@ flowchart TD
 - **Memory Footprint:** $\approx 180\text{ MB}$ RAM (CPU inference mode).
 - **Inference Latency:** $< 35\text{ ms}$ on standard x86 CPU; $< 8\text{ ms}$ on NVIDIA GPU.
 - **Throughput:** Capable of processing up to **30 apples per second**, compatible with industrial optical sorting conveyor belts.
+

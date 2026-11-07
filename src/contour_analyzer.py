@@ -94,3 +94,4 @@ def draw_traits_overlay(image_path, output_path=None):
     if output_path:
         cv2.imwrite(output_path, img)
     return img, traits
+

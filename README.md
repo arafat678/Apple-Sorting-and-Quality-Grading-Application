@@ -34,12 +34,38 @@ flowchart LR
 
 ---
 
+## 🖼️ Experimental Results & Visualizations
+
+### 1. Computer Vision Physical Trait & Contour Extraction
+| Real-Time Bounding Box & Dimensioning | Surface Defect & Edge Contour Segmentation |
+|:---:|:---:|
+| ![Contour Dimensioning](figures/01_contour_dimensioning_results.png) | ![Defect Segmentation](figures/02_defect_contour_detection.png) |
+| *Automated pixel measurement ($W=373\text{ px}, H=397\text{ px}$) yielding $R^2 = 0.942$ correlation with physical digital caliper measurements.* | *Convex Hull and Canny edge segmentation isolating surface blemishes, scabs, and bruising.* |
+
+---
+
+### 2. Deep Learning Model Convergence & Confusion Matrix
+| Training & Validation Loss/Accuracy Convergence | Multi-Class Confusion Matrix |
+|:---:|:---:|
+| ![Training Convergence](figures/04_training_accuracy_loss.png) | ![Confusion Matrix](figures/03_confusion_matrix.png) |
+| *Loss convergence across fine-tuning epochs demonstrating rapid stabilization and negligible overfitting (Validation Loss: 0.00038).* | *Confusion matrix across quality grades showing 99.5% recall on defective apples (Grade C) and minimal confusion.* |
+
+---
+
+### 3. Multi-Variety Prediction & Web Application Deployment
+| Multi-Variety Apple Defect Classification | Interactive Web Quality Grading Dashboard |
+|:---:|:---:|
+| ![Multi Variety Prediction](figures/05_multi_variety_prediction.png) | ![Web Dashboard Output](figures/07_quality_grading_output.png) |
+| *Robust multi-class identification across Fuji, McIntosh, Scarlet, Kashmiri, and Shimla cultivars.* | *Full-stack Flask dashboard displaying predicted grade, confidence score, bounding dimensions, and commercial market destination.* |
+
+---
+
 ## 🍎 Commercial Quality Grading Standards
 
 Grading criteria follow international post-harvest guidelines established by the **Codex Alimentarius Commission (CODEX STAN 299-2010)**:
 
 | Quality Grade | Commercial Category | Diameter ($W$) | Morphological Symmetry ($AR$) | Surface Defect Tolerance | Commercial Destination |
-|:---|:---|:---:|:---:|:---:|:---|
+|:---|:---|:---:|:---:|:---|:---|
 | **Grade A** | **Premium / Extra** | $\ge 80\text{ mm}$ ($\ge 220\text{ px}$) | $0.92 - 1.05$ (Symmetric) | $< 2\%$ surface blemish | International Export & Premium Supermarkets |
 | **Grade B** | **Standard / Table** | $65 - 80\text{ mm}$ ($160 - 220\text{ px}$) | $0.85 - 1.15$ (Slight variation) | $< 8\%$ superficial defect | Domestic Fresh Produce Retail |
 | **Grade C** | **Commercial / Cull** | $< 65\text{ mm}$ ($< 160\text{ px}$) | Irregular shape | $> 8\%$ bruise, scab, or rot | Industrial Juicing, Applesauce & Processing |
@@ -103,6 +129,14 @@ Apple-Sorting-and-Quality-Grading-Application/
 ├── CITATION.cff                    # Academic citation metadata
 ├── requirements.txt                # Python dependencies
 ├── app.py                          # Flask application entry point
+├── figures/                        # High-resolution benchmark & result figures
+│   ├── 01_contour_dimensioning_results.png
+│   ├── 02_defect_contour_detection.png
+│   ├── 03_confusion_matrix.png
+│   ├── 04_training_accuracy_loss.png
+│   ├── 05_multi_variety_prediction.png
+│   ├── 06_web_application_dashboard.png
+│   └── 07_quality_grading_output.png
 ├── templates/                      # Responsive HTML5 UI templates
 │   ├── index.html                  # File upload & live camera input
 │   ├── prediction.html             # Detailed grading report & visual annotations
