@@ -15,7 +15,7 @@ An end-to-end computer vision and deep learning system for automated apple sorti
 
 ---
 
-## 📌 System Architecture
+##  System Architecture
 
 The pipeline combines classical morphological contour analysis with deep convolutional neural networks into a 3-stage inspection workflow:
 
@@ -34,7 +34,7 @@ flowchart LR
 
 ---
 
-## 🖼️ Experimental Results & Visualizations
+## Experimental Results & Visualizations
 
 ### 1. Computer Vision Physical Trait & Contour Extraction
 | Real-Time Bounding Box & Dimensioning | Surface Defect & Edge Contour Segmentation |
@@ -60,7 +60,7 @@ flowchart LR
 
 ---
 
-## 🍎 Commercial Quality Grading Standards
+## Commercial Quality Grading Standards
 
 Grading criteria follow international post-harvest guidelines established by the **Codex Alimentarius Commission (CODEX STAN 299-2010)**:
 
@@ -72,7 +72,7 @@ Grading criteria follow international post-harvest guidelines established by the
 
 ---
 
-## 📊 Quantitative Benchmark Results
+##  Quantitative Benchmark Results
 
 Evaluated across held-out multi-color apple test datasets:
 
@@ -88,7 +88,7 @@ Evaluated across held-out multi-color apple test datasets:
 
 ---
 
-## 🚀 Quickstart & Installation
+##  Quickstart & Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -119,7 +119,7 @@ Open your browser and navigate to **`http://localhost:8000`**.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 Apple-Sorting-and-Quality-Grading-Application/
@@ -159,7 +159,7 @@ Apple-Sorting-and-Quality-Grading-Application/
 
 ---
 
-## 📖 Citation
+##  Citation
 
 If you use this project, models, or empirical findings in your academic work, please cite:
 
@@ -175,6 +175,6 @@ If you use this project, models, or empirical findings in your academic work, pl
 
 ---
 
-## 📜 License
+##  License
 
 Distributed under the [MIT License](LICENSE).
